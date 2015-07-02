@@ -446,44 +446,44 @@ $(function () {
 	
 	setupDepartureTable({
 		element: $('#t1'),
-		stationID: 'Zürich, Rosengartenstrasse',
+		stationID: 'Zürich, Toni-Areal',
 		journeyExclusions: [],
 		remainingTime: true,
-		travelTimeMinutes: 5,
-		knappTravelTimeMinutes: 2
+		travelTimeMinutes: 3,
+		knappTravelTimeMinutes: 1
 	});
 	
 	setupDepartureTable({
 		element: $('#t2'),
-		stationID: 'Zürich, Wipkingerplatz',
+		stationID: 'Zürich, Fischerweg',
 		journeyExclusions: [],
 		remainingTime: true,
-		travelTimeMinutes: 5,
-		knappTravelTimeMinutes: 2
-	});
-	
-	setupDepartureTable({
-		element: $('#t3'),
-		stationID: 'Zürich, Escher-Wyss-Platz',
-		journeyExclusions: ['Zürich, Rosengartenstrasse', 'Zürich, Wipkingerplatz'],
-		remainingTime: true,
-		travelTimeMinutes: 8,
+		travelTimeMinutes: 7,
 		knappTravelTimeMinutes: 4
 	});
 	
+	// setupDepartureTable({
+	// 	element: $('#t3'),
+	// 	stationID: 'Zürich, Escher-Wyss-Platz',
+	// 	journeyExclusions: ['Zürich, Rosengartenstrasse', 'Zürich, Wipkingerplatz'],
+	// 	remainingTime: true,
+	// 	travelTimeMinutes: 8,
+	// 	knappTravelTimeMinutes: 4
+	// });
+
 	setupDepartureTable({
 		element: $('#t4'),
-		stationID: 'Zürich Wipkingen (SBB)',
-		journeyExclusions: ['Zürich, Rosengartenstrasse'],
+		stationID: 'Zürich Hardbrücke (SBB)',
+		journeyExclusions: ['Zürich, Toni-Areal'],
 		remainingTime: false,
-		travelTimeMinutes: 8,
-		knappTravelTimeMinutes: 4
+		travelTimeMinutes: 11,
+		knappTravelTimeMinutes: 7
 	});
 	
 	setupDepartureTable({
 		element: $('#t5'),
-		stationID: 'Zürich Hardbrücke (SBB)',
-		journeyExclusions: ['Zürich, Escher-Wyss-Platz'],
+		stationID: 'Zürich Altstetten (SBB)',
+		journeyExclusions: ['Zürich, Toni-Areal'],
 		remainingTime: false,
 		travelTimeMinutes: 16,
 		knappTravelTimeMinutes: 11
