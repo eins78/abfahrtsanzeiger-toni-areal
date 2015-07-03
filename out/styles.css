@@ -1,0 +1,204 @@
+@font-face {
+  src: url('fonts/OfficinaSansITC-Book.woff') format('woff');
+  font-family: 'OfficinaSansITC';
+  font-weight: 100;
+}
+@font-face {
+  src: url('fonts/OfficinaSansITC-Medium.woff') format('woff');
+  font-family: 'OfficinaSansITC';
+  font-weight: 500;
+}
+@font-face {
+  src: url('fonts/OfficinaSansITC-Bold.woff') format('woff');
+  font-family: 'OfficinaSansITC';
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/HelveticaNeue-Bold.woff') format('woff');
+  font-weight: 600;
+}
+body {
+  margin: 0em;
+  padding: 0em .5em;
+  background-color: white;
+  font-family: 'OfficinaSansITC';
+  font-weight: 500;
+  color: black;
+  -webkit-text-size-adjust: none;
+}
+body.kiosk {
+  font-size: 32px;
+  overflow: hidden;
+}
+.spalten {
+  margin: -0.5em;
+}
+.spalten > div {
+  margin: 0em;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0.5em;
+}
+.spalten > div > div {
+  display: table-cell;
+  width: 50%;
+}
+h3 {
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  margin-left: .05em;
+  font-weight: 600;
+}
+table {
+  border-collapse: collapse;
+  text-align: left;
+  table-layout: fixed;
+  width: 100%;
+}
+table thead {
+  background-color: #0e3a7e;
+  color: white;
+}
+table tbody tr:nth-child(2n) {
+  background-color: #cbdbfe;
+}
+table tbody tr:last-child {
+  border-bottom-style: solid;
+}
+table col.linie {
+  width: 3.1em;
+  border-left-style: solid;
+}
+table col.richtung {
+  width: 8.2em;
+}
+table col.abfahrten {
+  border-left-style: solid;
+  border-right-style: solid;
+}
+table td,
+table th {
+  padding: .2em .5em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+table td:nth-child(1) {
+  text-align: right;
+  padding-right: .2em;
+}
+table col,
+table tr {
+  border-color: #0e3a7e;
+  border-width: .15em;
+}
+table span.linie {
+  display: inline-block;
+  min-width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+}
+table span.linie > span {
+  font-family: 'Helvetica Neue';
+  font-weight: 600;
+  padding: 0em .2em;
+  position: relative;
+  top: .12em;
+}
+table span.linie[linie='4'] {
+  color: white;
+  background-color: #39328b;
+}
+table span.linie[linie='11'] {
+  color: white;
+  background-color: #149f3d;
+}
+table span.linie[linie='13'] {
+  color: black;
+  background-color: #fecd20;
+}
+table span.linie[linie='14'] {
+  color: white;
+  background-color: #1b8dd9;
+}
+table span.linie[linie='15'] {
+  color: white;
+  background-color: #e6091d;
+}
+table span.linie[linie='17'] {
+  color: white;
+  background-color: #8f125c;
+}
+table span.linie[linie='32'] {
+  color: black;
+  background-color: #cb9bc7;
+}
+table span.linie[linie='33'] {
+  color: black;
+  background-color: #dedb93;
+}
+table span.linie[linie='34'] {
+  color: black;
+  background-color: #64b0e4;
+}
+table span.linie[linie='46'] {
+  color: black;
+  background-color: #b4d997;
+}
+table span.linie[linie='72'] {
+  color: black;
+  background-color: #c89284;
+}
+table span.linie[linie='69'],
+table span.linie[linie='71'] {
+  color: black;
+  background-color: #64b0e4;
+}
+table span.linie[linie^='S'] {
+  color: white;
+  background-color: #002087;
+}
+table span.linie[linie^='N'],
+table span.linie[linie^='SN'] {
+  color: #fff325;
+  background-color: black;
+}
+table span.linie[linie^='E'] {
+  color: #c00;
+  background-color: #eee;
+}
+table span.abfahrt:not(:last-child):after {
+  content: ', ';
+}
+table span.verspätung {
+  font-weight: 600;
+  font-size: .8em;
+  color: #c70900;
+}
+table span.verspätung:before {
+  content: ' +';
+}
+table span.abfahrt.knapp {
+  opacity: .999999;
+}
+table tr.keine-abfahrten td {
+  opacity: .5;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center;
+  white-space: normal;
+}
+.blink-on span.abfahrt.knapp,
+span.abfahrt.verpasst {
+  opacity: .5;
+}
+#footer {
+  margin-top: .4em;
+  font-weight: 100;
+}
+#footer .right {
+  float: right;
+}
+/*# sourceMappingURL=styles.css.map */
